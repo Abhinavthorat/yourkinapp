@@ -134,6 +134,17 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.subheadline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: -1.5rem;
+    /* Pull it closer to the H1 */
+    text-align: left;
+    max-width: 600px;
+}
+
 /* VALUE POINTS */
 .value-points {
     list-style: none;
