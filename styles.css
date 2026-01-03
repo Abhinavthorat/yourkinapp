@@ -500,8 +500,10 @@ input {
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 120px;
         /* Clearance for fixed footer */
+        gap: 2rem;
+        /* Reduce gap on mobile */
         height: auto;
         overflow: visible;
     }
@@ -613,6 +615,11 @@ input {
     .demo-subtext {
         text-align: center;
         /* Center the subtext */
+    }
+
+    .demo-container {
+        align-items: center;
+        /* Override flex-start to center "Less rules" text */
     }
 
     .signup-container {
