@@ -1,5 +1,5 @@
 :root {
-    --bg-dark: #000000;
+    --bg-dark: #11141f;
     --text-main: #ffffff;
     --text-muted: #666666;
     --accent: #ffffff;
@@ -177,7 +177,7 @@ h1 {
 }
 
 .spend-card {
-    background: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+    background: linear-gradient(135deg, #161a29 0%, #0c0e17 100%);
     border: 1px solid #333;
     padding: 1rem 2rem;
     border-radius: 20px;
