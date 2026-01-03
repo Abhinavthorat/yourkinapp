@@ -188,9 +188,9 @@ h1 {
     overflow: hidden;
     width: 100%;
     /* Force width */
-    max-width: 400px;
-    /* Increased from 340px */
-    padding: 1rem 2rem;
+    max-width: 290px;
+    /* Reduced to compact size */
+    padding: 1rem 1.5rem;
     box-sizing: border-box;
 }
 
@@ -324,9 +324,9 @@ input {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     width: 100%;
     /* Match width of card */
-    max-width: 400px;
-    /* Match spend-card 400px */
-    padding: 1rem 2rem;
+    max-width: 290px;
+    /* Match spend-card 290px */
+    padding: 1rem 1.5rem;
     box-sizing: border-box;
 }
 
