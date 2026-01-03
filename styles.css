@@ -500,8 +500,8 @@ input {
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 100px;
-        padding-bottom: 160px;
-        /* Ensure bottom content is visible above fixed footer */
+        padding-bottom: 100px;
+        /* Clearance for fixed footer */
         height: auto;
         overflow: visible;
     }
