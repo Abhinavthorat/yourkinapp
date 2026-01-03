@@ -1,300 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kin - Permission layer for your money. Know what you can spend before you spend.">
-    <title>Kin - Spend Without Guilt</title>
+    <title>Kin</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Hero Section: Point 1 -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Permission Layer for Your Money</h1>
-            <p class="hero-subtitle">Know what you can spend — before you spend.</p>
-            <p class="hero-tagline">Not budgeting. Not tracking. <strong>Decision confidence.</strong></p>
-        </div>
-    </section>
+    <div class="noise"></div>
+    <div class="background-texture"></div>
 
-    <!-- Visual Explanation: Point 2 -->
-    <section class="visual-explanation">
-        <div class="container">
-            <div class="income-flow">
-                <div class="flow-item income">
-                    <span class="label">Income</span>
-                    <div class="arrow">↓</div>
+    <main class="single-view">
+        <div class="content-wrapper">
+            <!-- Left Column: Visual -->
+            <div class="col-visual fade-in delay-1">
+                <div class="hero-visual cred-hero">
+                    <div class="glow-backdrop"></div>
+                    <img src="assets/hero_char.jpg" alt="Kin" class="main-char">
                 </div>
-                <div class="flow-split">
-                    <div class="flow-item needs">
-                        <span class="label">Needs</span>
-                        <span class="amount">Rent, Bills, EMIs</span>
+            </div>
+
+            <!-- Right Column: Content -->
+            <div class="col-content">
+                <h1 class="fade-in delay-2">Spend without guilt.</h1>
+
+                <!-- Value Points -->
+                <ul class="value-points fade-in delay-2">
+                    <li><span class="bullet"></span>No charts</li>
+                    <li><span class="bullet"></span>No tracking</li>
+                    <li><span class="bullet"></span>Just a feeling of safety</li>
+                </ul>
+
+                <!-- Rolling Number Demo -->
+                <div class="demo-container fade-in delay-3">
+                    <div class="spend-card">
+                        <div class="number-wrapper">
+                            <span class="currency">₹</span>
+                            <span class="rolling-number" data-target="random">0</span>
+                        </div>
+                        <span class="label">Go Spend</span>
                     </div>
-                    <div class="flow-item future">
-                        <span class="label">Future</span>
-                        <span class="amount">Savings, Investments</span>
-                    </div>
-                    <div class="flow-item joy highlight">
-                        <span class="label">Joy</span>
-                        <span class="amount">Safe to Spend</span>
-                        <span class="badge">✓</span>
-                    </div>
+                    <p class="demo-subtext fade-in-late">I can give better ideas</p>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="signup-container fade-in delay-3">
+                    <form id="waitlistForm">
+                        <div class="input-group">
+                            <input type="email" id="email" placeholder="your@email.com" required autocomplete="email">
+                            <button type="submit" class="btn-submit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="success-message hidden">You're on the list.</p>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Anti-Budgeting: Point 3 -->
-    <section class="anti-budgeting">
-        <div class="container">
-            <div class="quote-box">
-                <p class="quote">"Budgets tell you what you did wrong.<br>Kin tells you what you can do next."</p>
-            </div>
+        <!-- Full Width Tagline -->
+        <div class="cred-tagline fade-in delay-3">
+            <span class="line"></span>
+            <p class="poetic-mini">THE CONFIDENCE TO SAY YES</p>
+            <span class="line"></span>
         </div>
-    </section>
+    </main>
 
-    <!-- Safe to Spend Hero Metric: Point 4 -->
-    <section class="safe-to-spend">
-        <div class="container">
-            <div class="metric-card">
-                <p class="metric-label">Safe to Spend Today</p>
-                <p class="metric-value">₹3,240</p>
-                <p class="metric-note">Like checking weather, not finances</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pre-Spend Framing: Point 5 -->
-    <section class="framing">
-        <div class="container">
-            <div class="framing-grid">
-                <div class="framing-column old">
-                    <h3>❌ The Old Way</h3>
-                    <ul>
-                        <li>Expense tracking</li>
-                        <li>Monthly budgets</li>
-                        <li>Guilt after spending</li>
-                    </ul>
-                </div>
-                <div class="framing-column new">
-                    <h3>✅ Kin's Way</h3>
-                    <ul>
-                        <li>Permission before spending</li>
-                        <li>No mental math</li>
-                        <li>No regret</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Joy Is Not Irresponsible: Point 6 -->
-    <section class="joy-section">
-        <div class="container">
-            <div class="joy-box">
-                <h2>"Joy spending is not the problem.<br>Unplanned joy is."</h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- One Tap Check: Point 7 -->
-    <section class="use-case">
-        <div class="container">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <div class="message user">
-                        <p>"Can I order this?"</p>
-                    </div>
-                    <div class="message bot">
-                        <p><strong>Yes. You're safe.</strong></p>
-                    </div>
-                </div>
-            </div>
-            <p class="use-case-label">This is the <em>aha</em> moment</p>
-        </div>
-    </section>
-
-    <!-- Zero Manual Effort: Point 8 -->
-    <section class="zero-effort">
-        <div class="container">
-            <h2>Zero Manual Effort</h2>
-            <div class="effort-list">
-                <div class="effort-item">❌ No manual entry</div>
-                <div class="effort-item">❌ No categorization</div>
-                <div class="effort-item">❌ No daily tracking</div>
-            </div>
-            <p class="effort-quote">"If it needs effort, Gen Z won't do it."</p>
-        </div>
-    </section>
-
-    <!-- How Kin Knows: Point 9 -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>How Kin Knows</h2>
-            <div class="explanation-box">
-                <p>"We read bank SMS + patterns.<br>We don't ask you to log anything."</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Privacy & Trust: Point 10 -->
-    <section class="privacy">
-        <div class="container">
-            <h2>Privacy & Trust</h2>
-            <div class="privacy-grid">
-                <div class="privacy-item">🔒 Read-only</div>
-                <div class="privacy-item">💰 No money movement</div>
-                <div class="privacy-item">🚫 No selling data</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Emotional Contrast: Point 11 -->
-    <section class="contrast">
-        <div class="container">
-            <h2>Before & After</h2>
-            <div class="contrast-grid">
-                <div class="contrast-column before">
-                    <h3>Before Kin</h3>
-                    <ul>
-                        <li>😰 Anxiety</li>
-                        <li>🧮 Mental math</li>
-                        <li>❓ "Did I overspend?"</li>
-                    </ul>
-                </div>
-                <div class="contrast-column after">
-                    <h3>After Kin</h3>
-                    <ul>
-                        <li>😌 Calm</li>
-                        <li>✨ Clarity</li>
-                        <li>🎉 Guilt-free fun</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Life Polygon: Point 12 -->
-    <section class="life-polygon">
-        <div class="container">
-            <h2>The Life Balance</h2>
-            <div class="polygon-visual">
-                <div class="polygon-item needs-poly">Needs<br><small>stable</small></div>
-                <div class="polygon-item future-poly">Future<br><small>growing</small></div>
-                <div class="polygon-item joy-poly">Joy<br><small>alive</small></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Not Another App: Point 13 -->
-    <section class="not-another">
-        <div class="container">
-            <h2>Not Another Finance App</h2>
-            <div class="comparison-list">
-                <div class="comparison-item">❌ Not a tracker</div>
-                <div class="comparison-item">❌ Not a bank</div>
-                <div class="comparison-item">❌ Not a spreadsheet</div>
-            </div>
-            <p class="comparison-quote">"Kin is a decision layer."</p>
-        </div>
-    </section>
-
-    <!-- Who It's For: Point 14 -->
-    <section class="audience">
-        <div class="container">
-            <div class="audience-grid">
-                <div class="audience-column for">
-                    <h3>For</h3>
-                    <ul>
-                        <li>Salaried Gen Z</li>
-                        <li>First income</li>
-                        <li>People who hate budgets</li>
-                    </ul>
-                </div>
-                <div class="audience-column not-for">
-                    <h3>Not For</h3>
-                    <ul>
-                        <li>Hardcore traders</li>
-                        <li>Spreadsheet lovers</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Realistic Scenario: Point 15 -->
-    <section class="scenario">
-        <div class="container">
-            <div class="story-box">
-                <p class="story">"It's Friday night.<br>Friends want to go out.<br>You check Kin.<br>You say yes — confidently."</p>
-                <p class="story-note">This sells more than features.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Early Access: Point 17 -->
-    <section class="early-access">
-        <div class="container">
-            <h2>Early Access</h2>
-            <p class="access-text">"We're building a calmer way to spend money.<br>Join the first 1,000 users."</p>
-            <form class="signup-form" id="signupForm">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Get Early Access</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Founder Philosophy: Point 18 -->
-    <section class="philosophy">
-        <div class="container">
-            <div class="philosophy-box">
-                <p>"Kin exists because budgeting never worked for us either."</p>
-                <p class="philosophy-note">Human > corporate</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ: Point 19 -->
-    <section class="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>Will I overspend?</h3>
-                    <p>Kin shows you what's safe to spend. You decide. No restrictions, just clarity.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is this safe?</h3>
-                    <p>Read-only access. We never move money. We never sell your data.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What if income changes?</h3>
-                    <p>Kin adapts automatically. No manual updates needed.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA: Point 20 -->
-    <section class="cta">
-        <div class="container">
-            <h2>Spend Without Guilt</h2>
-            <p class="cta-subtitle">Get spending clarity.</p>
-            <button class="cta-button" onclick="document.getElementById('signupForm').scrollIntoView({behavior: 'smooth'})">Join Early Access</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Kin. Permission, not restriction.</p>
-        </div>
+    <footer class="fixed-footer">
+        <p>&copy; 2026 Kin. <a href="privacy.html">Privacy Policy</a></p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

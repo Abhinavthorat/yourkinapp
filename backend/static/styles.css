@@ -1,0 +1,296 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #050505;
+    --text-primary: #e5e5e5;
+    --text-secondary: #a3a3a3;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+    /* Subtle Indigo Glow */
+    --accent-color: #6366f1;
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+
+/* Noise Texture Overlay */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.container {
+    max-width: 800px;
+    /* Narrower for intimacy */
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+p {
+    letter-spacing: -0.02em;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center align for impact */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.logo-spacer {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.logo-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160%;
+    height: 160%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(20px);
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    background: linear-gradient(180deg, #ffffff 0%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+/* Atmosphere Sections */
+.atmosphere {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Generally center */
+}
+
+.poetic-text {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
+
+.poetic-text.right-align {
+    text-align: right;
+    margin-left: auto;
+    width: 100%;
+}
+
+.highlight {
+    color: var(--text-primary);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Visual Anchor */
+.visual-anchor {
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+}
+
+.glow-orb {
+    width: 200px;
+    height: 200px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.2;
+    margin: 0 auto 40px;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
+}
+
+.anchor-text {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Early Access */
+.early-access {
+    padding: 160px 0 100px;
+    text-align: center;
+}
+
+.access-title {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.access-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+}
+
+.signup-form {
+    display: inline-flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.signup-form:focus-within {
+    border-bottom-color: var(--text-primary);
+}
+
+.signup-form input {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-family: inherit;
+    width: 300px;
+    margin-right: 16px;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup-form button {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s;
+}
+
+.signup-form button:hover {
+    color: var(--text-primary);
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .poetic-text {
+        font-size: 1.8rem;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .signup-form input {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 12px;
+    }
+
+    .signup-form input:focus {
+        border-bottom-color: var(--text-primary);
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kin - Permission layer for your money. Feel calm, safe, and in control.">
+    <title>Kin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="container">
+            <div class="logo-spacer">
+                <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Kin Logo" class="logo-image">
+                <div class="logo-glow"></div>
+            </div>
+            <h1 class="hero-title">Spend without<br>guilt.</h1>
+            <p class="hero-subtitle">A permission layer for your money.</p>
+        </div>
+    </section>
+
+    <!-- Atmosphere 1: Calm -->
+    <section class="atmosphere fade-in">
+        <div class="container">
+            <p class="poetic-text">
+                No charts.<br>
+                No tracking.<br>
+                Just a feeling of <span class="highlight">safety</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Atmosphere 2: Control -->
+    <section class="atmosphere fade-in">
+        <div class="container">
+            <p class="poetic-text right-align">
+                The confidence to say yes,<br>
+                knowing you really can.
+            </p>
+        </div>
+    </section>
+
+    <!-- Visual Anchor -->
+    <section class="visual-anchor fade-in">
+        <div class="container">
+            <div class="glow-orb"></div>
+            <p class="anchor-text">Quiet confidence in your pocket.</p>
+        </div>
+    </section>
+
+    <!-- Early Access -->
+    <section class="early-access fade-in">
+        <div class="container">
+            <h2 class="access-title">Experience the calm.</h2>
+            <p class="access-subtitle">Join the waitlist.</p>
+            <form class="signup-form" id="signupForm">
+                <input type="email" placeholder="email address" required>
+                <button type="submit">request access</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kin.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
