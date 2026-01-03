@@ -38,21 +38,22 @@ body {
     z-index: 0;
 }
 
-flex: 1;
-display: flex;
-flex-direction: column;
-/* Stack content and tagline */
-align-items: center;
-justify-content: center;
-position: relative;
-z-index: 1;
-gap: 3rem;
-overflow-y: auto;
-/* Enable potential local scroll if needed */
-height: 100%;
-/* Ensure it fills parent */
-width: 100%;
-/* Space between main part and tagline */
+.single-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Stack content and tagline */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    gap: 3rem;
+    overflow-y: auto;
+    /* Enable potential local scroll if needed */
+    height: 100%;
+    /* Ensure it fills parent */
+    width: 100%;
+    /* Space between main part and tagline */
 }
 
 .content-wrapper {
