@@ -48,11 +48,6 @@ body {
     position: relative;
     z-index: 1;
     gap: 3rem;
-    overflow-y: auto;
-    /* Enable potential local scroll if needed */
-    height: 100%;
-    /* Ensure it fills parent */
-    width: 100%;
     /* Space between main part and tagline */
 }
 
@@ -503,12 +498,17 @@ input {
     /* 1. Layout Stacking */
     .single-view {
         flex-direction: column;
-        justify-content: center;
-        padding-top: 15vh;
-        /* Push visual down a bit */
-        padding-bottom: 6rem;
-        /* Space for footer */
+        justify-content: flex-start;
+        /* Start from top so we can scroll down */
+        padding-top: 120px;
+        /* Clear header */
+        padding-bottom: 80px;
+        /* Clear footer */
         gap: 2rem;
+        height: auto;
+        /* Allow growth */
+        overflow: visible;
+        /* Let body scroll */
     }
 
     .col-visual,
