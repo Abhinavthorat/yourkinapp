@@ -583,6 +583,13 @@ input {
         align-items: center;
     }
 
+    .social-proof-text {
+        font-size: 1.1rem !important;
+        /* Revert to original size on mobile */
+        max-width: 300px;
+        /* Restore original max-width */
+    }
+
     .poetic-mini {
         font-size: 0.65rem;
         letter-spacing: 0.15em;
