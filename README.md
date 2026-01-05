@@ -1,6 +1,6 @@
 # Kin Website
 
-Landing page for Kin - Permission layer for your money.
+Landing page for Kin.
 
 ## Setup for GitHub Pages
 
@@ -48,7 +48,6 @@ npx serve
 
 ## Features
 
-- ✅ All 20 points from the brief implemented
 - ✅ Modern, clean design
 - ✅ Mobile responsive
 - ✅ Smooth animations
