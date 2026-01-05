@@ -1,34 +1,16 @@
-# Kin: AI-Driven Cross-Chain Liquidity
+# Kin: SME Cashflow Optimization
 
-A decentralized protocol for optimizing yield arbitrage across fragmented L2 networks using zero-knowledge proofs. Kin aggregates liquidity pools to minimize slippage for high-frequency algorithmic traders.
+A unified dashboard for small businesses to forecast cashflow, manage accounts receivable, and access automated invoice financing. Kin helps SMEs bridge the gap between invoicing and getting paid.
 
 ## Architecture
 
-- **ZK-Rollup Aggregation**: Uses zk-SNARKs to batch transaction proofs for gas-efficient settlement.
-- **Dynamic Yield Routing**: AI agents continuously monitor APY across Aave, Compound, and Curve to rebalance liquidity.
-- **Non-Custodial Bridges**: Trustless asset bridging via atomic swaps.
-
-## Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/username/kin-protocol.git
-   cd kin-protocol
-   ```
-
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run Node:**
-   ```bash
-   npm run dev
-   ```
+- **Predictive Engine**: Time-series forecasting models (ARIMA/Prophet) to predict future cashflow gaps based on historical banking data.
+- **Banking Integrations**: Secure OAuth connections via Plaid/Yodlee for real-time transaction monitoring.
+- **Risk Assessment Module**: Automated credit scoring for invoice factoring using alternative data points.
 
 ## Documentation
 
-For full API documentation and whitepaper, please refer to the internal wiki or the `docs/` directory (private access only).
+For integration guides and API reference, please refer to the internal developer portal.
 
 ## License
 
