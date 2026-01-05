@@ -584,7 +584,7 @@ input {
     .fixed-footer {
         padding: 1rem 1.5rem;
         font-size: 0.7rem;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(17, 20, 31, 0.95);
         /* readable bg */
         backdrop-filter: blur(10px);
     }
@@ -592,7 +592,7 @@ input {
     /* 6. Header Adjustments */
     .top-nav {
         padding: 1rem 1.5rem;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(17, 20, 31, 0.95);
         /* readable bg */
         backdrop-filter: blur(10px);
     }
