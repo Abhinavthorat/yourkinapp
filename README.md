@@ -1,38 +1,27 @@
-# Kin Website
+# Modern Landing Page Template
 
-Landing page for Kin.
+A clean, high-performance landing page template for modern web applications. Built with vanilla HTML/CSS/JS for maximum compatibility and speed.
 
-## Setup for GitHub Pages
+## Setup
 
-1. **Create a new GitHub repository** named `yourkinapp` (or your preferred name)
-
-2. **Push this website directory to the repo:**
+1. **Clone the repository:**
    ```bash
-   cd website
-   git init
-   git add .
-   git commit -m "Initial commit - Kin website"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/yourkinapp.git
-   git push -u origin main
+   git clone https://github.com/username/project-template.git
+   cd project-template
    ```
 
-3. **Enable GitHub Pages:**
+2. **Deploy to GitHub Pages:**
    - Go to repository Settings → Pages
    - Source: Deploy from a branch
-   - Branch: `main` / `root`
+   - Branch: `main`
    - Save
 
-4. **Custom Domain Setup:**
-   - The `CNAME` file is already configured for `yourkinapp.com`
-   - In GitHub Settings → Pages, add your custom domain
-   - Update DNS records:
-     - Add A record: `@` → GitHub Pages IPs (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
-     - Add CNAME record: `www` → `yourusername.github.io`
-
-5. **SSL Certificate:**
-   - GitHub automatically provisions SSL for custom domains
-   - Wait 24-48 hours for DNS propagation
+3. **Custom Domain Setup (Optional):**
+   - Add your custom domain in GitHub Settings → Pages
+   - Configure DNS records with your provider:
+     - Add A record pointing to GitHub Pages IPs
+     - Add CNAME record for subdomains
+   - Wait for DNS propagation
 
 ## Local Development
 
@@ -48,14 +37,14 @@ npx serve
 
 ## Features
 
-- ✅ Modern, clean design
-- ✅ Mobile responsive
-- ✅ Smooth animations
-- ✅ Email signup form (ready for backend integration)
+- ✅ Responsive Design
+- ✅ Modern UI/UX
+- ✅ Performance Optimized
+- ✅ Zero Dependencies
+- ✅ Easy Customization
 
 ## Customization
 
 - Update colors in `styles.css` (`:root` variables)
 - Modify content in `index.html`
-- Add analytics in `script.js`
-
+- Extend logic in `script.js`
