@@ -1,50 +1,35 @@
-# Modern Landing Page Template
+# Kin: AI-Driven Cross-Chain Liquidity
 
-A clean, high-performance landing page template for modern web applications. Built with vanilla HTML/CSS/JS for maximum compatibility and speed.
+A decentralized protocol for optimizing yield arbitrage across fragmented L2 networks using zero-knowledge proofs. Kin aggregates liquidity pools to minimize slippage for high-frequency algorithmic traders.
+
+## Architecture
+
+- **ZK-Rollup Aggregation**: Uses zk-SNARKs to batch transaction proofs for gas-efficient settlement.
+- **Dynamic Yield Routing**: AI agents continuously monitor APY across Aave, Compound, and Curve to rebalance liquidity.
+- **Non-Custodial Bridges**: Trustless asset bridging via atomic swaps.
 
 ## Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/project-template.git
-   cd project-template
+   git clone https://github.com/username/kin-protocol.git
+   cd kin-protocol
    ```
 
-2. **Deploy to GitHub Pages:**
-   - Go to repository Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `main`
-   - Save
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-3. **Custom Domain Setup (Optional):**
-   - Add your custom domain in GitHub Settings → Pages
-   - Configure DNS records with your provider:
-     - Add A record pointing to GitHub Pages IPs
-     - Add CNAME record for subdomains
-   - Wait for DNS propagation
+3. **Run Node:**
+   ```bash
+   npm run dev
+   ```
 
-## Local Development
+## Documentation
 
-Simply open `index.html` in a browser or use a local server:
+For full API documentation and whitepaper, please refer to the internal wiki or the `docs/` directory (private access only).
 
-```bash
-# Python
-python -m http.server 8000
+## License
 
-# Node.js
-npx serve
-```
-
-## Features
-
-- ✅ Responsive Design
-- ✅ Modern UI/UX
-- ✅ Performance Optimized
-- ✅ Zero Dependencies
-- ✅ Easy Customization
-
-## Customization
-
-- Update colors in `styles.css` (`:root` variables)
-- Modify content in `index.html`
-- Extend logic in `script.js`
+MIT
